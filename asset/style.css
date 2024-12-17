@@ -16,7 +16,13 @@
 body {
     font-family: 'Livvic', sans-serif;
     background-color: var(--background-color);
-    max-width: 1200px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ! Helpers e layout */
+.container-small {
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -30,12 +36,12 @@ header {
     background-color: var(--header-color);
     background-image: url('images/header-bg.png');
     background-repeat: no-repeat;
-    background-position: 50% 65%;
+    background-position: 50% 85%;
     background-size: contain;
     background-attachment: fixed;
     color: var(--light-color);
     border-radius: 0 0 15px 15px;
-    padding: 5vh 20vh 0 5vh;
+    padding: 10vh 20vh 0 15vh;
     font-weight: 400;
     font-size: 1rem;
     text-align: center;
@@ -47,18 +53,18 @@ header {
         left: 0;
     }
 
-    h1 {
+    /* h1 {
         position: absolute;
         top: 7vh;
         left: 50%;
         transform: translate(-40%);
         width: 25vw;
-    }
+    } */
 }
 
 @media (max-width: 992px) {
     header {
-        background-position: 50% 60%;
+        background-position: 50% 40%;
     }
 }
 
