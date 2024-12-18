@@ -43,7 +43,7 @@ header {
     border-radius: 0 0 15px 15px;
     padding: 10vh 20vh 0 15vh;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 
     img {
@@ -73,5 +73,45 @@ header {
         /* background-position: 50% -25%; */
         background-size: cover;
         background-color: red;
+    }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Calendar */
+/* -------------------------------------------------------------------------------- */
+#calendar {
+    border: 1px solid red;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.cell-day {
+    border: 1px solid red;
+    width: calc(12.5% - 20px);
+    height: 118px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+}
+
+.cell-day:last-child {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .cell-day {
+        width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .cell-day {
+        /* height: 59px; */
+        width: calc(50% - 20px);
     }
 }
