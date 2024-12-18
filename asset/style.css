@@ -4,6 +4,8 @@
     --header-color: #2D28EB;
     --light-color: #fff;
     --dark-color: #000;
+    --accent-color: #2D6753;
+    --contrast-color: #D4D6F5;
 }
 
 /* ! Reset */
@@ -80,8 +82,7 @@ header {
 /* ! Calendar */
 /* -------------------------------------------------------------------------------- */
 #calendar {
-    border: 1px solid red;
-    margin-top: 12px;
+    margin-top: 1.5em;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -89,18 +90,24 @@ header {
 }
 
 .cell-day {
-    border: 1px solid red;
     width: calc(12.5% - 20px);
     height: 118px;
     border-radius: 15px;
     display: flex;
+    flex-flow: column-reverse;
     align-items: center;
     justify-content: center;
     color: var(--light-color);
+    background-color: var(--accent-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .cell-day:last-child {
     width: 100%;
+    color: var(--accent-color);
+    background-color: var(--contrast-color);
 }
 
 @media (max-width: 992px) {
