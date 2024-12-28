@@ -39,3 +39,10 @@ items.forEach((item) => {
         overlay.style.visibility = "visible";
     });
 });
+
+// to close pop-up
+const closeBtn = document.getElementById('close');
+
+closeBtn.addEventListener("click", function () {
+    overlay.style.visibility = "hidden";
+}); 
