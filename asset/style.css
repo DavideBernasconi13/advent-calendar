@@ -122,3 +122,23 @@ header {
         width: calc(50% - 20px);
     }
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.cell-content {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+}
