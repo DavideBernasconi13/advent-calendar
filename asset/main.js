@@ -30,10 +30,8 @@ for (i = 0; i <= 24; i++) {
 
 // to open pop-up
 const overlay = document.querySelector('.overlay');
-console.log(overlay);
-
 let items = document.querySelectorAll('.cell-day');
-
+// to make function all cell
 items.forEach((item) => {
     item.addEventListener("click", function () {
         overlay.style.visibility = "visible";
